@@ -1,0 +1,233 @@
+
+/* *{  задать на всю страницу */
+    /* padding: 0;
+    margin: 0;
+} */
+
+
+body {
+    background-color: floralwhite;
+color: rgb(8, 45, 45);
+font-size: 16px;
+font-weight: normal;
+font-family: 'Roboto', sans-serif;
+/* font: normal 16px 'Roboto', sans-serif; */
+} 
+
+a { /*ссылки*/
+    color: black;
+    text-decoration: none;
+}
+a:hover { /* действие при наведении на ссылки*/
+    text-decoration: underline;
+}
+a:active { /*при зажатии*/
+    color: blue;
+}
+a:visited { /*после нажатия*/
+    color: rgb(16, 75, 10);
+}
+
+
+.avatar {
+    /* in html class "." in html id "#" */
+  width: 400px;  
+  border-radius: 28px;
+box-shadow: 20px 19px 14px rgba(207 156 54);
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+    }
+
+@media (max-width: 700px) { /*описываем правила кот будут работать только на ширине до 700px*/
+  .info {
+    display: block;
+    text-align: center;
+  }  
+
+}
+
+    .info-text {
+        margin-left: 30px;
+    }
+
+    .info-text > h4 {
+        margin-top: 30px;
+    }
+
+
+.info p {
+ color: #1b0707 ;
+margin: 0;
+/* margin - отступ м\д строками; */
+font-style: italic;
+font-size: x-large;
+font-weight:bolder  ;
+text-decoration:none;
+text-transform: capitalize;
+letter-spacing: 3px;
+word-spacing: 12px;
+}
+
+.container {
+padding-left: 50px;
+max-width: 1100px;
+margin: auto;
+padding-top: 40px;
+/* margin: auto - адаптив по ширине для моб */
+}
+
+
+/* .social {
+
+background: yellowgreen;
+padding: 15px;
+border: 5px solid red;
+margin: 20px;
+/* padding: 15px 20px 25px 30px - верх пр низ лев или top right bottom left */
+/* border-bottom-style: dotted;
+border-top-width: 15px;
+border-right-color: blue;
+} */
+
+/* .box-model > div {
+float: left; <!-- выстроить divы в ряд-->
+background: black;
+height: 200px;
+border: 4px solid red; <!-- /* - ЧТОБ все div в ряд */
+/* -->
+width: 25%;
+box-sizing: border-box;
+box-sizing: border-box - ЧТОБ все div в ряд */
+
+.bg-yellow {
+    background: rgb(234, 234, 154);
+}
+.bg-green {
+    background: rgb(171, 237, 171);
+}
+.bg-red {
+    background: rgb(195, 120, 120);
+}
+
+.card {
+    padding: 15px 20px;
+     border-radius: 20px;
+}
+
+.card h2 {
+    color: blueviolet;
+    margin-bottom: 10px;
+}
+
+.list {
+    padding: 0 20px; /*перв-верх низ.втор-бока*/
+    /* list-style: none; */
+}
+
+.list li {
+    color: rebeccapurple;
+    margin-bottom: 10px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(1), .table td:nth-child(3) { /*стиль только 1-го столбика*/
+    color: blueviolet;
+} 
+
+/* .table tr:nth-child(even) { /*стиль каждой четной строчки. odd - нечетной*/
+    /* color: blueviolet;
+/* }  */
+
+.link-list {
+    list-style: none;
+    padding: 0;
+}
+
+.link-list li {
+   margin-bottom: 10px;
+   padding-bottom: 5px;
+   border-bottom: 2px solid #070000; 
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.form-group label {
+display: block; /*каждый label на своей строке*/
+font-size: 14px;
+color: rgb(27, 21, 10) ;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent; /*прозрачн*/
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit; /*шрифт в поле наследуется*/    
+}
+
+.row {
+    display: flex; /*имя и емейл столбиками*/
+    margin-bottom: 20px;
+}
+
+.row > .form-group { /*обращаемся к группе имя емейл чтобы было по 50%*/
+width: 50%;
+margin-right: 20px;
+}
+
+.row > .form-group:last-child { /*обращаемся к последнему элементу группы*/
+margin-right: 0;
+}
+
+/* display: none - убрать элементы */
+
+.btn {
+    background: #3d2dc9;
+    padding: 15px 20px;
+    color: #f4fc9c;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn:hover { /*при наведении тускнеет*/
+opacity: 0.7;
+}
+
+.position {
+
+position: relative; /*относительно родительского блока*/
+border: 4px solid black;
+margin-top: 50px;
+padding: 20px;
+height: 300px;
+}
+
+.box {
+    width: 100%;
+    height: 50px;
+    background: #3d2dc9;
+     /*position: static;остается неизменным*/
+    /*position: absolute;  - независимо от других в окне (top left right buttom */
+    position: fixed; /*постоянно адаптируется. закрепляется*/
+top: 0;
+left: 0;
+
+}
